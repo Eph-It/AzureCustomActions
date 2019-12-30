@@ -1,0 +1,16 @@
+{
+    "name":"MEMCM-Actions",
+    "version":"0.1",
+    "description":"Custom actions for MEMCM Web Console!",
+    "manifest_version":2,
+    "content_scripts":[
+        {
+            "matches":[
+                "https://devicemanagement.microsoft.com/*"
+            ],
+            "css":["MEMCMActions.css"],
+            "js":["MEMCMActions.js"]
+        }
+    ],
+    "permissions": ["activeTab","webRequest"]
+}
