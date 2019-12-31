@@ -9,7 +9,6 @@
         var arrayLength = commandBarList.length;
         for(var i = 0; i < arrayLength; i++){
             var lastCh = commandBarList[i].lastElementChild
-            console.log("test");
             if(!(lastCh.classList.contains("EphingItem"))){
                 var li = document.createElement("li");
                 var div1 = document.createElement("div");

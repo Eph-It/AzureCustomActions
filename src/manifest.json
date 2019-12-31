@@ -12,5 +12,6 @@
             "js":["MEMCMActions.js"]
         }
     ],
-    "permissions": ["activeTab","webRequest"]
+    "permissions": ["activeTab","webRequest"],
+    "web_accessible_resources":[ "Tools/*.json" ]
 }
