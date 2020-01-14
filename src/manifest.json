@@ -1,15 +1,16 @@
 {
-    "name":"MEMCM-Actions",
+    "name":"Azure-Custom-Actions",
     "version":"0.1",
-    "description":"Custom actions for MEMCM Web Console!",
+    "description":"Custom actions for Azure Web Console!",
     "manifest_version":2,
     "content_scripts":[
         {
             "matches":[
-                "https://devicemanagement.microsoft.com/*"
+                "https://devicemanagement.microsoft.com/*",
+                "https://portal.azure.com/*"
             ],
-            "css":["MEMCMActions.css"],
-            "js":["MEMCMActions.js"]
+            "css":["AzureCustomActions.css"],
+            "js":["AzureCustomActions.js"]
         }
     ],
     "permissions": ["activeTab","webRequest"],

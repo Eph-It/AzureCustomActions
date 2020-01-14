@@ -11,6 +11,7 @@ namespace AzureCustomActions
     {
         static void Main(string[] args)
         {
+            // Get settings
             var settingsBuilder = new ConfigurationBuilder()
                         .SetBasePath(Directory.GetCurrentDirectory())
                         .AddJsonFile("appsettings.json",optional:true, reloadOnChange:true);

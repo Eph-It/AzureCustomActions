@@ -15,5 +15,7 @@ namespace AzureCustomActions.Models
         public string ActionData { get; set; }
         public string ShowOnURL { get; set; }
         public string Name { get; set; }
+        public string TargetClass { get; set; }
+        public string ItemListClass { get; set; }
     }
 }
