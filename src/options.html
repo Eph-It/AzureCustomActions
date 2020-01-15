@@ -1,28 +1,50 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-  </head>
 
-  <body>
-    <style>
-        #existing_actions{
-            width:25%;
-            min-width: 150px;
-        }
-    </style>
-    <form>
-        <label>Existing Tools:
-            <select name="existing_actions" size="5" id="existing_actions">
-                
-            </select>
-        </label>
-        <button type="submit">Save</button>
-    </form>
+<head>
+  <meta charset="utf-8">
+</head>
 
-    <script src="options.js"></script>
+<body>
+  <style>
+    input, select, label {
+   display:block;
+   width: 25%; min-width: 150px;
+  }
+  </style>
+  <div>
+    <div>
+      <label>Existing Tools:</label>
+      <select id="ACAActionList" style="display: inline;" name="existing_actions" size="5" id="existing_actions"></select>
+      <button id="ACARemoveButton" style="display: inline;">Remove</button>
+    </div>
+    <div>
+      <p>
+        <label for="ActionNameText">Name:</label>
+        <input type="text" id="ActionNameText" />
+      </p>
+    </div>
+    <div>
+      <p>
+        <label for="ActionShowOnURL">Show On URL:</label>
+        <input type="text" id="ActionShowOnURL" />
+      </p>
+    </div>
+    <div>
+      <p>
+        <label for="ActionWebhook">Webhook:</label>
+        <input type="text" id="ActionWebhook" />
+      </p>
+    </div>
+    <button id="ACAAddButton">Add</button>
+    
 
-  </body>
+  </div>
+</div>
+
+  <script src="options.js"></script>
+
+</body>
 
 </html>
